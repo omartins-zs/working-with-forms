@@ -10,3 +10,15 @@ members = [
         instrument: 'Guitarra'
     }
 ]
+
+const handlingForms = {
+
+    data() {
+        return {
+            members: window.members
+        }
+    },
+
+};
+
+Vue.createApp(handlingForms).mount('#app');
