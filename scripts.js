@@ -26,7 +26,12 @@ const handlingForms = {
                 this.newMember = {}
                 
             }else{
-                alert("All fields must be filled")
+                Swal.fire({
+                    title: 'Error!',
+                    text: 'Todos os campos devem ser preenchidos',
+                    icon: 'error',
+                    confirmButtonText: 'OK'
+                  })
                 // alert("Todos os campos devem ser preenchidos");
             }
         }
