@@ -21,8 +21,14 @@ const handlingForms = {
     },
     methods: {
         addMember:function(){
-            this.members.push(this.newMember);
-            this.newMember = {}
+            if (this.newMember.fname && this.newMember.lname && this.newMember.instrument) {
+                this.members.push(this.newMember);
+                this.newMember = {}
+                
+            }else{
+                alert("All fields must be filled")
+                // alert("Todos os campos devem ser preenchidos");
+            }
         }
     }
 };
