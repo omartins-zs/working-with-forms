@@ -28,10 +28,10 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
-                    <td>John</td>
-                    <td>Lennon</td>
-                    <td>Violão</td>
+                <tr v-for="member in members">
+                    <td>{{member.fname}}</td>
+                    <td>{{member.lname}}</td>
+                    <td>{{member.instrument}}</td>
                 </tr>
                 </tbody>
             </table>
