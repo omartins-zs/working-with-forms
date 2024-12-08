@@ -13,7 +13,53 @@
 
     <body>
         
-       
+        <main id="app">
+            
+            <h1>
+                Membros da Banda
+            </h1>
+
+            <table>
+                <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Sobrenome</th>
+                    <th>Instrumento</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Lennon</td>
+                    <td>Violão</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <section class="add-more">
+                <p>Adicionar membros</p>
+                <form>
+                
+                <label for="fname">Nome:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                
+                <label for="lname">Sobrenome:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+
+                <label for="instrument">Instrumento:</label><br>
+                <select name="instrument" id="instrument">
+                    <option value="Baixo">Baixo</option>
+                    <option value="Guitarra">Guitarra</option>
+                    <option value="Violão">Violão</option>
+                    <option value="Bateria">Bateria</option>
+                    </select>
+                    <br><br>
+                <input type="button" value="Adicionar">
+                </form> 
+            </section>
+
+        </main>
+        <script src="scripts.js"></script>
     </body>
 
 </html>
